@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--vermelaranja);
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --vermelaranja: #d1463a;
+  --vermelho-acinzentado: #311e1d;
+  --cinza-claro: #f6f6f6;
+  --cinza-escuro: #353334;
+  --whatsapp-1: #25d366;
+  --whatsapp-2: #128c7e;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: var(--cinza-claro);
+  color: var(--vermelho-acinzentado);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  position: fixed relative;
+  z-index: 1000;
+  width: 100%;
+}
+.logo img {
+  width: 150px;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+nav a {
+  color: var(--vermelho-acinzentado);
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  color: var(--cinza-escuro);
+  cursor: pointer;
+}
+
+.cta-button {
+  background: #d94235;
+  color: #fff !important;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background: #b83227;
+  transform: translateY(-2px);
+}
+.whatsapp {
+  background-color: var(--whatsapp-2);
+  font-weight: 600;
+}
+.whatsapp:hover {
+  background-color: var(--whatsapp-1);
+}
+.hero {
+  background-image: url(/assets/hero.png);
+  height: 75vh;
+  background-size: cover;
+  background-position: 10% 100%;
+  display: flex;
+}
+.hero h1 span {
+  color: var(--vermelaranja);
+}
+.hero h1 {
+  color: var(--vermelho-acinzentado);
+  font-size: 5rem;
+  line-height: 1;
+}
+.hero .subtitle {
+  color: var(--cinza-escuro);
+  font-size: 1.6rem;
+}
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text {
+  flex: 1;
+  width: 55%;
+  margin-top: 100px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+}
+.box {
+  flex: 1;
+  position: relative;
+}
+.box img {
+  position: absolute;
+  right: 0;
+  height: 600px;
+
+  max-width: 1000px;
+}
+.ctas-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+}
+.aguaButton {
+  background-color: rgb(32, 32, 177);
+}
+
+.gas {
+  background-color: var(--vermelaranja);
+}
+.gas .text {
+  padding-bottom: 20px;
+}
+.gas .text h2 {
+  color: var(--cinza-claro);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.gas .text p {
+  color: #f6f6f6;
+}
+
+.agua {
+  background: var(--cinza-claro);
+}
+.agua .container {
+  flex-direction: row-reverse;
+  padding-bottom: 100px;
+}
+.agua .text h2 {
+  color: var(--cinza-escuro);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.agua .cta-button {
+  width: fit-content;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  gap: 1rem;
+}
+.contato .text {
+  color: var(--cinza-claro);
+  gap: 1rem;
+}
+.contato .text h2 {
+  color: var(--cinza-claro);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.contato .text p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.contato .text a {
+  color: #353334;
+  text-decoration: underline;
+}
+.contato .text .cta-button {
+  text-decoration: none;
+}
+.contato .text h3 {
+  color: var(--cinza-claro);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.redes-sociais {
+  display: flex;
+  gap: 1rem;
+}
+.redes-sociais a {
+  text-decoration: none;
+}
+.redes-sociais a:hover svg {
+  color: var(--vermelho-acinzentado);
+  transition: 0.5s;
+}
+.redes-sociais svg {
+  width: 50px;
+  height: 50px;
+  color: var(--cinza-claro);
+}
+.footer {
+  background: var(--cinza-claro);
+  color: #311e1d;
+  padding: 35px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer em {
+  color: var(--vermelho-acinzentado);
+  font-weight: 500;
+}
+.footer-brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-logo {
+  width: 250px;
+  height: auto;
+}
+
+.footer-slogan {
+  margin: 0;
+  padding-left: 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--cinza-escuro);
+  text-align: center;
+}
+
+.footer-slogan strong {
+  color: var(--vermelho-acinzentado);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.footer-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.footer-signature span {
+  font-size: 1rem;
+  color: var(--vermelho-acinzentado);
+}
+
+.footer-signature strong {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--vermelho-acinzentado);
+}
+@media (max-width: 768px) {
+  header {
+    height: 70px;
+    padding: 0 5%;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+  .nav-menu {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+    padding: 15px 5% 25px;
+
+    background: #f6f6f6;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-menu a {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-menu .cta-button {
+    margin-top: 15px;
+    text-align: center;
+    border: none;
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .box img {
+    position: relative;
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  .gas .text h2,
+  .agua .text h2 {
+    font-size: 2rem;
+  }
+  .agua .container {
+    flex-direction: column-reverse;
+  }
+  .agua .box {
+    width: 100%;
+  }
+  .agua .box img {
+    position: relative;
+    width: 100%;
+  }
+  .strong-cta-1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .contato .text h2,
+  .contato .text h3 {
+    font-size: 1.2rem;
+  }
+  .contato .text p {
+    font-size: 1rem;
+  }
+  .contato .redes-sociais svg {
+    width: 30px;
+  }
+}
