@@ -313,11 +313,13 @@ nav a {
 
     top: 70px;
     left: 0;
+    text-align: center;
+    justify-content: center;
 
     width: 100%;
     display: none;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
 
     gap: 0;
     padding: 15px 5% 25px;
@@ -335,6 +337,7 @@ nav a {
   }
   .nav-menu .cta-button {
     margin-top: 15px;
+
     text-align: center;
     padding: 20px;
     border: none;
