@@ -58,10 +58,10 @@ nav a {
 }
 
 .cta-button {
-  background: #d94235;
+  background: var(--whatsapp-2);
   color: #fff !important;
 
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
 
   transition: 0.3s ease;
@@ -147,6 +147,7 @@ nav a {
 .gas {
   background-color: var(--vermelaranja);
 }
+
 .gas .text {
   padding-bottom: 20px;
 }
@@ -159,6 +160,9 @@ nav a {
 }
 .gas .text p {
   color: #f6f6f6;
+}
+.gas img {
+  margin-right: -200px;
 }
 
 .agua {
@@ -185,9 +189,11 @@ nav a {
   position: relative;
   gap: 1rem;
 }
+
 .contato .text {
   color: var(--cinza-claro);
   gap: 1rem;
+  padding-bottom: 50px;
 }
 .contato .text h2 {
   color: var(--cinza-claro);
@@ -385,6 +391,12 @@ nav a {
   .agua .text h2 {
     font-size: 2rem;
   }
+  .gas img,
+  .agua img {
+    margin: 0;
+    max-width: 360px;
+    max-height: 360px;
+  }
   .agua .container {
     flex-direction: column-reverse;
   }
@@ -393,7 +405,6 @@ nav a {
   }
   .agua .box img {
     position: relative;
-    width: 100%;
   }
   .strong-cta-1 {
     font-size: 3rem;
